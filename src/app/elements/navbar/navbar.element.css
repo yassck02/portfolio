@@ -3,7 +3,7 @@
     height: 75px;
     top: 0px;
     display: flex;
-    position: absolute;
+    position: fixed;
     text-align: center;
     vertical-align: middle;
     background-color: lightgray;
