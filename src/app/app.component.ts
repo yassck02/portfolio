@@ -8,13 +8,11 @@ import { NavLink } from './elements/navbar/navbar.element'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   navLinks: NavLink[] = [
       { path: '/home', label: 'Home'         },
       { path: '/projects', label: 'Projects' },
   ];
-
-  currentLink: int;
-  currentIndex: int;
 
   onLeftClicked() {
 

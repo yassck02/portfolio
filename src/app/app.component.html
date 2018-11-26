@@ -5,7 +5,9 @@
     (click)="onLeftClicked"><</button>
 
 <div class="main">
-    <cy-navbar [links]="navLinks"></cy-navbar>
+    <cy-navbar [links]="navLinks"
+    [class.sticky] = "sticky"
+    #stickyMenu></cy-navbar>
     <router-outlet></router-outlet>
 </div>
 
