@@ -1,12 +1,15 @@
 
-<cy-navbar [links]="navLinks"></cy-navbar>
+<div class="header">Connor Yass</div>
 
-<button style="left: 10px"><</button>
+<button style="left: 10px"
+    (click)="onLeftClicked"><</button>
 
 <div class="main">
+    <cy-navbar [links]="navLinks"></cy-navbar>
     <router-outlet></router-outlet>
 </div>
 
-<button style="right: 10px">></button>
+<button style="right: 10px"
+    (click)="onRightClicked">></button>
 
-<cy-footer></cy-footer>
+<div class="footer">21connor21@gmail.com</div>

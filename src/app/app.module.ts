@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 
 import { NavBarElement } from './elements/navbar/navbar.element';
 
-import { FooterElement } from './elements/footer/footer.element';
-
 import { HomePage } from './pages/home/home.page';
 import { ProjectsPage } from './pages/projects/projects.page';
 import { Four0FourPage } from './pages/four0four/four0four.page';
@@ -18,7 +16,6 @@ import { Four0FourPage } from './pages/four0four/four0four.page';
         AppComponent,
 
         NavBarElement,
-        FooterElement,
 
         ProjectsPage,
         Four0FourPage,
