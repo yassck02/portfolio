@@ -6,8 +6,10 @@
 
 .card {
     border-radius: 7px;
-    border: 1px solid rgb(128, 128, 128);
+    border: 1px solid lightgray;
     background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 a {
@@ -17,37 +19,34 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: var(--color);
     text-decoration: none;
 }
 
 .activeLink {
-    color: red;
+    color: var(--color);
     text-decoration: underline;
 }
 
-.card {
-    margin-bottom: 10px;
-    padding: 15px;
-}
-
 button {
-    color: red;
+    color: var(--color);
     border: none;
-    background: gray;
+    background: #f9f9f9;
     top: 48%;
     position: fixed;
     border-radius: 4px;
     width: 20px;
     height: 35px;
+    font-weight: 700;
 }
 
 button:hover {
-    color: gray;
-    background: red;
+    color: #f9f9f9;
+    background: var(--color);
 }
 
 .note {
     text-align: center;
-    color: lightgray;
+    font-size: 10px;
+    color: gray;
 }

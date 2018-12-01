@@ -7,13 +7,13 @@
     <div class="note">
         <p>Connor Yass</p>
     </div>
-    {{currentTab}}
 
     <div class="card">
         <nav>
             <a *ngFor="let tab of tabs"
                 routerLink="{{tab.path}}"
-                routerLinkActive="activeLink">{{tab.label}}</a>
+                routerLinkActive="activeLink"
+                (click)="currentTab=tab.index">{{tab.label}}</a>
         </nav>
     </div>
 

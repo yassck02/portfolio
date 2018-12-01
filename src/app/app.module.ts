@@ -9,6 +9,8 @@ import { ProjectService } from './services/project.service'
 
 import { HomePage } from './pages/home/home.page';
 import { ProjectsPage } from './pages/projects/projects.page';
+import { ContactPage } from './pages/contact/contact.page';
+import { SoftwarePage } from './pages/software/software.page';
 import { Four0FourPage } from './pages/four0four/four0four.page';
 
 @NgModule({
@@ -18,6 +20,8 @@ import { Four0FourPage } from './pages/four0four/four0four.page';
         ProjectsPage,
         Four0FourPage,
         HomePage,
+        SoftwarePage,
+        ContactPage,
     ],
     imports: [
         BrowserModule,

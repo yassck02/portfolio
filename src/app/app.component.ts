@@ -10,8 +10,10 @@ import { Router } from '@angular/router';
 export class AppComponent {
 
   tabs: any[] = [
-      { path: '/home',     label: 'Home'     },
-      { path: '/projects', label: 'Projects' },
+      { index: 0, path: '/home',     label: 'Home'     },
+      { index: 1, path: '/software', label: 'Software' },
+      { index: 2, path: '/projects', label: 'Projects' },
+      { index: 3, path: '/contact',  label: 'Contact'  },
   ];
 
   currentTab: number = 0;
@@ -32,7 +34,6 @@ export class AppComponent {
       } else if(event.key == "ArrowRight") {
           this.onRightClicked();
       }
-      console.log(event.key)
   }
 
   constructor(private router: Router){}
