@@ -1,34 +1,32 @@
 import { Injectable } from '@angular/core';
+import { Observable } from "rxjs";
+import { HttpClient } from "@angular/common/http";
 
-export interface Project {
+export interface IProject {
     title: string;
     subtitle: string;
-    description: string;
-    imageUrls: string[];
+    repoUrl: string;
+    images: string[];
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProjectService {
 
-  constructor() { }
+    private _profile_url: string = "https://raw.githubusercontent.com/yassck02";
+    private _manifest_filename: string = "manifest.json";
 
-  getProjects(): Project[] {
-      return PROJECTS;
-  }
+    getProject(id: number):Observable<IProject> {
+        var url = this._profile_url + "/" + PROJECT_REFS[id] + "/master/" + this._manifest_filename;
+        return this.http.get<IProject>( url );
+    }
 
-  getProject(id: number): Project {
-      return PROJECTS[id];
-  }
+    constructor(private http: HttpClient) { }
+
 }
 
 
-const PROJECTS: Project[] = [
-    {
-        title: 'Project 001',
-        subtitle: 'My first personal project',
-        description: 'A simple project to showcase my skills',
-        imageUrls: []
-    },
+const PROJECT_REFS: string[] = [
+    "_Chaos",
 ]
