@@ -1,17 +1,28 @@
 
-<div class="header">Connor Yass</div>
-
-<button style="left: 10px"
-    (click)="onLeftClicked"><</button>
+<button style="left: 10px" (click)="onLeftClicked()"> < </button>
+<button style="right: 10px" (click)="onRightClicked()"> > </button>
 
 <div class="main">
-    <cy-navbar [links]="navLinks"
-    [class.sticky] = "sticky"
-    #stickyMenu></cy-navbar>
-    <router-outlet></router-outlet>
+
+    <div class="note">
+        <p>Connor Yass</p>
+    </div>
+    {{currentTab}}
+
+    <div class="card">
+        <nav>
+            <a *ngFor="let tab of tabs"
+                routerLink="{{tab.path}}"
+                routerLinkActive="activeLink">{{tab.label}}</a>
+        </nav>
+    </div>
+
+    <div class="card">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="note">
+        <p>Insert notes here...</p>
+    </div>
+
 </div>
-
-<button style="right: 10px"
-    (click)="onRightClicked">></button>
-
-<div class="footer">21connor21@gmail.com</div>

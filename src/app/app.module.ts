@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { NavBarElement } from './elements/navbar/navbar.element';
+import { ProjectService } from './services/project.service'
 
 import { HomePage } from './pages/home/home.page';
 import { ProjectsPage } from './pages/projects/projects.page';
@@ -14,8 +14,6 @@ import { Four0FourPage } from './pages/four0four/four0four.page';
 @NgModule({
     declarations: [
         AppComponent,
-
-        NavBarElement,
 
         ProjectsPage,
         Four0FourPage,
@@ -26,7 +24,7 @@ import { Four0FourPage } from './pages/four0four/four0four.page';
         BrowserAnimationsModule,
         AppRoutingModule
     ],
-    providers: [],
+    providers: [ ProjectService ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule { }

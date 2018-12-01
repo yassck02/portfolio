@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ProjectService } from '../../services/project.service'
+
 @Component({
     selector: 'page-projects',
     templateUrl: './projects.page.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsPage implements OnInit {
 
-    constructor() { }
+    constructor(private service: ProjectService) { }
 
     ngOnInit(): void { }
 

@@ -39,6 +39,7 @@ Projects
 Awards and Publications
 - Undergrad research
 	- Publication + presentations
+	- Quick pitch competition
 - Math project
 	- Award article
 - Hackathon 2017
@@ -52,4 +53,16 @@ White theme
 Dark gray text
 Light gray thin lines
 Rainbow hue acents
+
+
+
+
+
+
+//------------------------
+
+AI that plays atari games
+- Frogger, missile command, packman
+- pinball
+
 
