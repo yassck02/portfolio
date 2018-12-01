@@ -23,10 +23,11 @@ export class ProjectService {
     }
 
     constructor(private http: HttpClient) { }
-
 }
-
 
 const PROJECT_REFS: string[] = [
     "_Chaos",
+    "Mandelbrot-Set",
+    "Spirographer",
+    "Math-Art"
 ]

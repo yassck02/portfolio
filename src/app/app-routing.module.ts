@@ -6,9 +6,11 @@ import { ProjectsPage } from './pages/projects/projects.page'
 import { HomePage } from './pages/home/home.page'
 import { SoftwarePage } from './pages/software/software.page'
 import { ContactPage } from './pages/contact/contact.page'
+import { ProjectDetailPage } from './pages/projects/project-detail.page'
 
 const routes: Routes = [
     { path: 'projects',     component: ProjectsPage         },
+    { path: 'projects/:id', component: ProjectDetailPage    },
     { path: 'home',         component: HomePage             },
     { path: 'contact',      component: ContactPage          },
     { path: 'software',     component: SoftwarePage         },

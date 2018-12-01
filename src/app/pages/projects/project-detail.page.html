@@ -1,0 +1,10 @@
+<div *ngIf="project === undefined">
+    <p>Loading...</p>
+</div>
+<div *ngIf="project !== undefined">
+    <h1>{{project.title}}</h1>
+    <p>{{project.subtitle}}</p>
+    <p>{{project.description}}</p>
+    <p> </p>
+    <p *ngFor="let image of project.images">{{image}}</p>
+</div>
