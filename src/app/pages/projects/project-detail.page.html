@@ -3,8 +3,9 @@
 </div>
 <div *ngIf="project !== undefined">
     <h1>{{project.title}}</h1>
-    <p>{{project.subtitle}}</p>
+    <h2>{{project.subtitle}}</h2>
     <p>{{project.description}}</p>
-    <p> </p>
-    <p *ngFor="let image of project.images">{{image}}</p>
+    <a href="https://github.com/yassck02/{{project.title}}">Github Repository</a>
+    <img *ngFor="let image of project.images"
+    src="https://raw.githubusercontent.com/yassck02/{{project.title}}/master/{{image}}">
 </div>
