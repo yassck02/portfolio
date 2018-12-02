@@ -1,0 +1,11 @@
+a {
+    color: #555;
+    text-decoration: none;
+    margin: 6px;
+    padding-left: 2px;
+    border-left: 2px solid white;
+}
+
+a:hover {
+    border-left: 2px solid var(--color);
+}
