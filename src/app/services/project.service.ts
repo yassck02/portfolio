@@ -23,9 +23,14 @@ export class ProjectService {
     }
 
     constructor(private http: HttpClient) { }
+
+    getProjectRefs(): string[] {
+        return PROJECT_REFS;
+    }
+
 }
 
-const PROJECT_REFS: string[] = [
+export const PROJECT_REFS: string[] = [
     "_Chaos",
     "Mandelbrot-Set",
     "Spirographer",

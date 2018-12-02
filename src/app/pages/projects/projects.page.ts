@@ -8,15 +8,11 @@ import { ProjectService, IProject } from '../../services/project.service'
 })
 export class ProjectsPage implements OnInit {
 
-    public project: IProject;
+    public projects: string[];
 
     constructor(private service: ProjectService) { }
 
     ngOnInit() {
-        this.service.getProject(0)
-            .subscribe( (data: IProject) => {
-                this.project = data
-                console.log(data)
-            });
+        this.projects = this.service.getProjectRefs();
     }
 }
