@@ -34,5 +34,7 @@ export const PROJECT_REFS: string[] = [
     "_Chaos",
     "Mandelbrot-Set",
     "Spirographer",
-    "Math-Art"
+    "Math-Art",
+    "L-System-Viewer",
+    "ASCII-Maze-Generator"
 ]

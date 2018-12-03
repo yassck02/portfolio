@@ -16,6 +16,8 @@ import { SoftwarePage } from './pages/software/software.page';
 import { ProjectDetailPage } from './pages/projects/project-detail.page';
 import { Four0FourPage } from './pages/four0four/four0four.page';
 
+import { ResumePage } from './pages/resume/resume.page';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -25,7 +27,9 @@ import { Four0FourPage } from './pages/four0four/four0four.page';
         HomePage,
         SoftwarePage,
         ContactPage,
-        ProjectDetailPage
+        ProjectDetailPage,
+
+        ResumePage
     ],
     imports: [
         BrowserModule,

@@ -14,6 +14,7 @@ export class AppComponent {
       { index: 1, path: '/software', label: 'Software' },
       { index: 2, path: '/projects', label: 'Projects' },
       { index: 3, path: '/contact',  label: 'Contact'  },
+      { index: 4, path: '/resume',   label: 'Résumé'   },
   ];
 
   currentTab: number = 0;

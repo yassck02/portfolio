@@ -1,0 +1,126 @@
+
+::selection {
+  background: var(--color)
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+hr {
+    border: 0;
+    background-color: var(--color);
+    width: 100%;
+    height: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--color);
+}
+
+
+h1 {
+    font-variant: small-caps;
+    width: 100%;
+    margin: 8px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+}
+
+#portfolio-link {
+    font-weight: bold;
+    color: var(--color)
+}
+
+.date {
+    color: #AAA;
+    float: right;
+}
+
+.objective {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.education {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.course-work {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.course-list {
+    width: 50%;
+    display: inline-block;
+}
+
+.experience {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.experience-item {
+    margin-bottom: 10px;
+}
+
+.awards {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.skills {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-right: 20px;
+}
+
+.references {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.reference {
+    display: inline-block;
+    width: 33.3%;
+}
