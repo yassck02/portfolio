@@ -1,6 +1,6 @@
 
 ::selection {
-  background: var(--color)
+  background: hsla(var(--hue), 100%, 50%, 0.5)
 }
 
 .grid {
@@ -10,7 +10,7 @@
 
 hr {
     border: 0;
-    background-color: var(--color);
+    background-color: hsl(var(--hue), 100%, 50%);
     width: 100%;
     height: 1px;
 }
@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: var(--color);
+    color: hsl(var(--hue), 100%, 50%);
 }
 
 
@@ -50,6 +50,7 @@ ul {
 
 li {
     display: block;
+    margin-top: 3px;
 }
 
 .header {
@@ -64,7 +65,7 @@ p {
 
 #portfolio-link {
     font-weight: bold;
-    color: var(--color)
+    color: hsl(var(--hue), 100%, 50%);
 }
 
 .date {

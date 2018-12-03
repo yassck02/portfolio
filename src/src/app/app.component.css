@@ -19,17 +19,17 @@ a {
 }
 
 a:hover {
-    color: var(--color);
+    color: hsl(var(--hue), 100%, 50%);
     text-decoration: none;
 }
 
 .activeLink {
-    color: var(--color);
+    color: hsl(var(--hue), 100%, 50%);
     text-decoration: underline;
 }
 
 button {
-    color: var(--color);
+    color: hsl(var(--hue), 100%, 50%);
     border: none;
     background: #f9f9f9;
     top: 48%;
@@ -42,7 +42,7 @@ button {
 
 button:hover {
     color: #f9f9f9;
-    background: var(--color);
+    background: hsl(var(--hue), 100%, 50%);
 }
 
 .note {
