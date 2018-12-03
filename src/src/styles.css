@@ -1,6 +1,10 @@
 
 :root {
-    --hue: 0;
+    --hue: 280;
+}
+
+::selection {
+  background: hsla(var(--hue), 100%, 50%, 0.5)
 }
 
 body {

@@ -5,7 +5,15 @@
     <h1>{{project.title}}</h1>
     <h2>{{project.subtitle}}</h2>
     <p>{{project.description}}</p>
-    <a href="https://github.com/yassck02/{{project.title}}">Github Repository</a>
-    <img *ngFor="let image of project.images"
-    src="https://raw.githubusercontent.com/yassck02/{{project.title}}/master/{{image}}">
+    <a href="https://github.com/yassck02/{{project.title}}"
+        class="gh-link">Github Repository</a>
+
+    <div class="responsive" *ngFor="let image of project.images">
+      <div class="gallery">
+        <a href="https://raw.githubusercontent.com/yassck02/{{project.title}}/master/{{image}}">
+          <img src="https://raw.githubusercontent.com/yassck02/{{project.title}}/master/{{image}}" width="600" height="400">
+        </a>
+      </div>
+    </div>
+
 </div>
