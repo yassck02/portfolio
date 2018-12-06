@@ -1,0 +1,4 @@
+em {
+    color: hsla(var(--hue), 100%, 50%);
+    font-weight: 700;
+}
