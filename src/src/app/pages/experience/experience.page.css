@@ -1,0 +1,14 @@
+
+hr {
+    width: 1px;
+    height: 100%;
+    color: hsl(var(--hue), 100%, 50%);
+}
+
+.experience-main {
+    border: 1px solid white;
+}
+
+.experience-main:hover {
+    border: 1px solid hsl(var(--hue), 100%, 50%);
+}
