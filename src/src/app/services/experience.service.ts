@@ -22,7 +22,7 @@ export class ExperienceService {
 
 export const EXPERIENCE: IExperience[] = [
     {
-        title: 'Software engineering co-op',
+        title: 'Software Engineering co-op',
         company: 'Rockwell Automation',
         location: 'Milwaukee WI',
         timeframe: 'May \'18 - Dec \'18',
@@ -32,7 +32,7 @@ export const EXPERIENCE: IExperience[] = [
         ]
     },
     {
-        title: 'Programming intern',
+        title: 'Programming Intern',
         company: 'Interactive Degree Planner LLC',
         location: 'Whitewater WI',
         timeframe: 'May \'18 - Dec \'18',
@@ -41,9 +41,9 @@ export const EXPERIENCE: IExperience[] = [
         ]
     },
     {
-        title: 'Game developement intern',
+        title: 'Game Developement Intern',
         company: 'Mobile Mesh Games',
-        location: 'Whitewarer WI',
+        location: 'Whitewater WI',
         timeframe: 'May \'18 - Dec \'18',
         skills: [
             'Mobile app developement',

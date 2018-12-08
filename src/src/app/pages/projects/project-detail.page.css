@@ -4,6 +4,7 @@ h1 {
     color: #222;
     font-weight: 700;
     margin-top: 0;
+    margin-bottom: 5px;
 }
 
 h2 {
@@ -26,7 +27,7 @@ p {
 }
 
 .gh-link:hover {
-    color: hsl(var(--hue), 100%, 50%);
+    color: hsl(var(--hue_0), 100%, 50%);
 }
 
 div.gallery {
@@ -62,10 +63,4 @@ div.gallery img {
     .responsive {
         width: 100%;
     }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
 }

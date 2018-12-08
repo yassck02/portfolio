@@ -20,11 +20,11 @@ button {
 
 button:hover {
     color: white;
-    background-color: hsl(var(--hue), 100%, 50%);
+    background-color: hsl(var(--hue_0), 100%, 50%);
     cursor: pointer;
 }
 
 button:active {
-    color: hsl(var(--hue), 100%, 50%);
+    color: hsl(var(--hue_0), 100%, 50%);
     background-color: white;
 }

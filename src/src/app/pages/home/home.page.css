@@ -1,5 +1,5 @@
 em {
-    color: hsla(var(--hue), 100%, 50%);
+    color: hsla(var(--hue_1), 100%, 50%);
     font-weight: 700;
 }
 

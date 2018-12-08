@@ -1,5 +1,6 @@
 .main {
     width: 75%;
+    max-width: 1000px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -19,22 +20,22 @@ nav {
 
 a {
     color: gray;
-    margin-right: 10px;
+    margin: 10px;
     text-decoration: none;
 }
 
 a:hover {
-    color: hsl(var(--hue), 100%, 50%);
+    color: hsl(var(--hue_1), 100%, 50%);
     text-decoration: none;
 }
 
 .activeLink {
-    color: hsl(var(--hue), 100%, 50%);
+    color: hsl(var(--hue_0), 100%, 50%);
     text-decoration: underline;
 }
 
 button {
-    color: hsl(var(--hue), 100%, 50%);
+    color: hsl(var(--hue_0), 100%, 50%);
     border: none;
     background: #f9f9f9;
     top: 48%;
@@ -47,7 +48,7 @@ button {
 
 button:hover {
     color: #f9f9f9;
-    background: hsl(var(--hue), 100%, 50%);
+    background: hsl(var(--hue_0), 100%, 50%);
 }
 
 .note {
@@ -59,7 +60,7 @@ button:hover {
 .resume-link {
     float: right;
     margin: 0;
-    border: solid 1px hsl(var(--hue), 100%, 50%);
+    border: solid 1px hsl(var(--hue_0), 100%, 50%);
     border-radius: 3px;
     padding-left: 3px;
     padding-right: 3px;

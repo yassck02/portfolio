@@ -2,7 +2,7 @@
 hr {
     width: 1px;
     height: 100%;
-    color: hsl(var(--hue), 100%, 50%);
+    color: hsl(var(--hue_0), 100%, 50%);
 }
 
 ul {
