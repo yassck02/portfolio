@@ -19,3 +19,7 @@ body {
     width: 100%;
     margin: 0;
 }
+
+.code {
+    font-family: "Courier New", Courier, monospace;
+}

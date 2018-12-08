@@ -2,3 +2,49 @@ em {
     color: hsla(var(--hue), 100%, 50%);
     font-weight: 700;
 }
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    margin-right: 5px;
+}
+
+ul li:before {
+  content: "–";
+  color: gray;
+  position: absolute;
+  margin-left: -1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.skills {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.languages {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.software {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.tools {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.framewrks {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}

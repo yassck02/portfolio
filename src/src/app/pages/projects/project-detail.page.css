@@ -1,17 +1,16 @@
-img {
-    width: 30%;
-}
 
 h1 {
     font-size: 20px;
     color: #222;
     font-weight: 700;
+    margin-top: 0;
 }
 
 h2 {
     font-size: 14px;
     color: #777;
     font-weight: 400;
+    margin-top: 0;
 }
 
 p {
@@ -23,6 +22,7 @@ p {
 .gh-link {
     text-decoration: none;
     color: black;
+    float: right;
 }
 
 .gh-link:hover {
@@ -36,17 +36,13 @@ div.gallery {
 }
 
 div.gallery:hover {
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
 
 div.gallery img {
     width: 100%;
     height: auto;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .responsive {

@@ -5,10 +5,17 @@ hr {
     color: hsl(var(--hue), 100%, 50%);
 }
 
-.experience-main {
-    border: 1px solid white;
+ul {
+    list-style-type: none;
 }
 
-.experience-main:hover {
-    border: 1px solid hsl(var(--hue), 100%, 50%);
+ul li:before {
+  content: "–";
+  color: gray;
+  position: absolute;
+  margin-left: -1em;
+}
+
+.experience-main {
+
 }
