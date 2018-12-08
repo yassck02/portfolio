@@ -1,9 +1,14 @@
 
-.group {
-    display: block;
+.input {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 button {
