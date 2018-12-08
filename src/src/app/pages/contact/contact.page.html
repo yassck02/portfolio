@@ -1,1 +1,36 @@
-<p><01010100011010000110100101101110011010110010000001000100011010010110011001100110011001010111001001100101011011100111010000101110/p>
+
+<form>
+    <div class="group">
+        <input
+          type="text"
+          name="name"
+          class="input"
+          placeholder="Name"
+          [(ngModel)]="name"
+          required
+          minlength="3"
+          #nameInput="ngModel">
+
+        <input
+          type="email"
+          name="email"
+          class="input"
+          placeholder="Email"
+          [(ngModel)]="email"
+          required
+          email
+          #emailInput="ngModel">
+     </div>
+
+     <div class="group">
+         <textarea
+           class="textarea"
+           name="message"
+           placeholder="Message"
+           [(ngModel)]="message"
+           required
+           #messageInput="ngModel"></textarea>
+    </div>
+
+    <button type="submit" (click)="processForm()">Submit</button>
+</form>

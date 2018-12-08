@@ -1,0 +1,25 @@
+
+.group {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: solid 1px gray;
+    border-radius: 3px;
+    color: gray;
+    background-color: white;
+}
+
+button:hover {
+    color: white;
+    background-color: hsl(var(--hue), 100%, 50%);
+    cursor: pointer;
+}
+
+button:active {
+    color: hsl(var(--hue), 100%, 50%);
+    background-color: white;
+}
