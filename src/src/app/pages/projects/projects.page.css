@@ -7,5 +7,5 @@ a {
 }
 
 a:hover {
-    border-left: 2px solid hsl(var(--hue_0), 100%, 50%);
+    border-left: 2px solid hsl(var(--hue_1), 100%, 50%);
 }

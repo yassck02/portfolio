@@ -3,8 +3,8 @@
     <hr>
     <p><strong>{{experience.title}}</strong>, {{experience.company}}</p>
     <img src="./assets/icons/pin.png" width="10px" height="16px">
-    <p class="code">{{experience.location}}</p>
-    <p class="code">//{{experience.timeframe}}</p>
+    <p class="code" style="color: gray">{{experience.location}}</p>
+    <p class="code" style="color: gray">//{{experience.timeframe}}</p>
     <ul>
         <li *ngFor="let skill of experience.skills">{{skill}}</li>
     </ul>

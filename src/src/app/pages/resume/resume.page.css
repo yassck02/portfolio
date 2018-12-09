@@ -15,10 +15,13 @@ a {
     color: black;
 }
 
+.info * {
+    display: inline-block;
+}
+
 a:hover {
     color: hsl(var(--hue_1), 100%, 50%);
 }
-
 
 h1 {
     font-variant: small-caps;
@@ -35,6 +38,7 @@ h3 {
 
 p {
     margin: 0;
+    display: block;
 }
 
 ul {
@@ -54,9 +58,6 @@ li {
     text-align: center;
 }
 
-p {
-    display: inline-block;
-}
 
 #portfolio-link {
     font-weight: bold;
@@ -66,7 +67,26 @@ p {
 .date {
     color: #AAA;
     float: right;
+    clear: right;
 }
+
+.location {
+    color: #AAA;
+    float: right;
+    clear: right;
+}
+
+.experience-item li:before {
+  content: "–";
+  color: gray;
+  position: absolute;
+  margin-left: -1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
 
 .objective {
     grid-column-start: 1;

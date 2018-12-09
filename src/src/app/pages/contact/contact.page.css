@@ -12,19 +12,19 @@ form {
 }
 
 button {
-    border: solid 1px gray;
+    border: solid 1px hsl(var(--hue_1), 100%, 50%);
     border-radius: 3px;
-    color: gray;
+    color: hsl(var(--hue_1), 100%, 50%);
     background-color: white;
+    margin: 0;
 }
 
 button:hover {
     color: white;
-    background-color: hsl(var(--hue_0), 100%, 50%);
+    background-color: hsl(var(--hue_1), 100%, 50%);
     cursor: pointer;
 }
 
 button:active {
-    color: hsl(var(--hue_0), 100%, 50%);
-    background-color: white;
+    background-color: hsl(var(--hue_0), 100%, 50%);
 }

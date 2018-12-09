@@ -10,11 +10,11 @@ import { Router } from '@angular/router';
 export class AppComponent {
 
   tabs: any[] = [
-      { index: 0, path: '/home',       label: 'About'     },
-      { index: 1, path: '/experience', label: 'Eperience' },
-      { index: 2, path: '/projects',   label: 'Projects'  },
-      { index: 3, path: '/contact',    label: 'Contact'   },
-      { index: 4, path: '/resume',     label: 'Résumé'    },
+      { index: 0, path: '/home',       label: 'About'      },
+      { index: 1, path: '/experience', label: 'Experience' },
+      { index: 2, path: '/projects',   label: 'Projects'   },
+      { index: 3, path: '/contact',    label: 'Contact'    },
+      { index: 4, path: '/resume',     label: 'Résumé'     },
   ];
 
   currentTab: number = 0;

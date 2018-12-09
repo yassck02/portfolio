@@ -14,8 +14,9 @@
     margin-bottom: 10px;
 }
 
-nav {
-    display: block;
+
+.media-links {
+    float: right;
 }
 
 a {
@@ -49,6 +50,10 @@ button {
 button:hover {
     color: #f9f9f9;
     background: hsl(var(--hue_0), 100%, 50%);
+}
+
+button:active {
+    background: hsl(var(--hue_1), 100%, 50%);
 }
 
 .note {

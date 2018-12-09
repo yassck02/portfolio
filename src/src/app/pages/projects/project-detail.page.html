@@ -2,11 +2,8 @@
     <p>Loading...</p>
 </div>
 <div *ngIf="project !== undefined">
-    <h1>{{project.title}}
-        <a class="gh-link" href="https://github.com/yassck02/{{project.title}}">
-            <img src="./assets/icons/github.png" width="20px" height="20px">
-        </a>
-    </h1>
+    <h1>{{project.title}}</h1>
+    <a class="gh-link" href="https://github.com/yassck02/{{project.title}}">Repository</a>
 
     <h2>{{project.subtitle}}</h2>
     <p *ngIf="project.description !== undefined">{{project.description}}</p>
