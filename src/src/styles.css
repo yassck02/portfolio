@@ -1,5 +1,12 @@
 
 :root {
+    --light_0: 0;
+    --light_1: 10;
+    --light_2: 20;
+    --light_3: 30;
+
+    --color: blue;
+
     --hue_0: 35;
     --hue_1: 335;
 }
@@ -9,7 +16,7 @@
 }
 
 html {
-    overflow-y:scroll;
+    overflow-y: scroll;
 }
 
 body {
