@@ -1,3 +1,8 @@
-<a *ngFor="let project of projects; index as i"
-    routerLink="/projects/{{i}}">{{projects[i]}}
-</a>
+
+<div class="group">
+    <p>var <strong>personal_projects</strong>[ ] = [<p>
+    <a *ngFor="let project of projects; index as i"
+        routerLink="/projects/{{i}}">{{projects[i]}},
+    </a>
+    <p>];<p>
+</div>

@@ -4,6 +4,13 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
 }
 
 .card {
@@ -37,7 +44,7 @@ a:hover {
 
 button {
     color: hsl(var(--hue_0), 100%, 50%);
-    border: none;
+    border: solid 1px hsl(var(--hue_0), 100%, 50%);
     background: #f9f9f9;
     top: 48%;
     position: fixed;

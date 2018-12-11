@@ -1,32 +1,37 @@
 
-<form method="GET" action="mailto:yassck02@gmail.com">
-    <input
-      type="text"
-      name="name"
-      class="input"
-      placeholder="Name"
-      [(ngModel)]="name"
-      required
-      minlength="3"
-      #nameInput="ngModel">
+<div class="main">
+    <p>Feel free to drop me a line regarding one of my projects, past experiences, future employment or anything else!</p>
 
-    <input
-      type="email"
-      name="email"
-      class="input"
-      placeholder="Email"
-      [(ngModel)]="email"
-      required
-      email
-      #emailInput="ngModel">
+    <form method="GET" action="mailto:yassck02@gmail.com">
+        <input
+          type="text"
+          name="name"
+          class="input"
+          placeholder="Name"
+          [(ngModel)]="name"
+          required
+          minlength="3"
+          #nameInput="ngModel">
 
-     <textarea
-       class="input"
-       name="message"
-       placeholder="Message"
-       [(ngModel)]="message"
-       required
-       #messageInput="ngModel"></textarea>
+        <input
+          type="email"
+          name="email"
+          class="input"
+          placeholder="Email"
+          [(ngModel)]="email"
+          required
+          email
+          #emailInput="ngModel">
 
-    <button type="submit" (click)="processForm()">Submit</button>
-</form>
+         <textarea
+           class="input"
+           name="message"
+           placeholder="Message"
+           [(ngModel)]="message"
+           required
+           #messageInput="ngModel"></textarea>
+
+        <button type="submit" (click)="processForm()">Submit</button>
+    </form>
+
+</div>

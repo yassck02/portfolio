@@ -1,11 +1,20 @@
 a {
     color: #555;
     text-decoration: none;
-    margin: 6px;
+    margin-left: 6px;
     padding-left: 2px;
     border-left: 2px solid white;
 }
 
 a:hover {
     border-left: 2px solid hsl(var(--hue_1), 100%, 50%);
+}
+
+p {
+    font-size: 14px;
+    margin: 7px;
+}
+
+.group {
+    margin-bottom: 10px;
 }

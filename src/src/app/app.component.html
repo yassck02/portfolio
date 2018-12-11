@@ -8,31 +8,33 @@
         <p>Connor Yass</p>
     </div>
 
-    <div class="card">
-        <nav>
-            <a *ngFor="let tab of tabs"
-                routerLink="{{tab.path}}"
-                routerLinkActive="activeLink"
-                (click)="currentTab=tab.index">{{tab.label}}</a>
+    <div class="content">
+        <div class="card">
+            <nav>
+                <a *ngFor="let tab of tabs"
+                    routerLink="{{tab.path}}"
+                    routerLinkActive="activeLink"
+                    (click)="currentTab=tab.index">{{tab.label}}</a>
 
-                <div class="media-links">
-                   <a href="https://github.com/yassck02">
-                       <img src="./assets/icons/github.png" width="15px" height="15px">
-                   </a>
+                    <div class="media-links">
+                       <a href="https://github.com/yassck02">
+                           <img src="./assets/icons/github.png" width="15px" height="15px">
+                       </a>
 
-                   <a href="https://linkedin.com/in/connor-yass">
-                       <img src="./assets/icons/linkedin.png"  width="15px" height="15px">
-                   </a>
+                       <a href="https://linkedin.com/in/connor-yass">
+                           <img src="./assets/icons/linkedin.png"  width="15px" height="15px">
+                       </a>
 
-                   <a href="https://www.instagram.com/connor.yass/">
-                       <img src="./assets/icons/instagram.png" width="15px" height="15px">
-                   </a>
-               </div>
-        </nav>
-    </div>
+                       <a href="https://www.instagram.com/connor.yass/">
+                           <img src="./assets/icons/instagram.png" width="15px" height="15px">
+                       </a>
+                   </div>
+            </nav>
+        </div>
 
-    <div class="card">
-        <router-outlet></router-outlet>
+        <div class="card">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 
     <div class="note">
