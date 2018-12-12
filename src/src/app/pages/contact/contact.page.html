@@ -13,16 +13,6 @@
           minlength="3"
           #nameInput="ngModel">
 
-        <input
-          type="email"
-          name="email"
-          class="input"
-          placeholder="Email"
-          [(ngModel)]="email"
-          required
-          email
-          #emailInput="ngModel">
-
          <textarea
            class="input"
            name="message"
@@ -31,7 +21,7 @@
            required
            #messageInput="ngModel"></textarea>
 
-        <button type="submit" (click)="processForm()">Submit</button>
+        <a type="submit" href="mailto:yassck02@gmail.com?subject={{email}}&body={{message}}">Submit</a>
     </form>
 
 </div>

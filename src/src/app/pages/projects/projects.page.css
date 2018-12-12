@@ -9,12 +9,3 @@ a {
 a:hover {
     border-left: 2px solid hsl(var(--hue_1), 100%, 50%);
 }
-
-p {
-    font-size: 14px;
-    margin: 7px;
-}
-
-.group {
-    margin-bottom: 10px;
-}

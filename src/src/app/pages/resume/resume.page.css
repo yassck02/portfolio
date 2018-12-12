@@ -39,6 +39,7 @@ h3 {
 p {
     margin: 0;
     display: block;
+    color: black;
 }
 
 ul {
@@ -58,6 +59,10 @@ li {
     text-align: center;
 }
 
+.info * {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 #portfolio-link {
     font-weight: bold;
@@ -74,13 +79,6 @@ li {
     color: #AAA;
     float: right;
     clear: right;
-}
-
-.experience-item li:before {
-  content: "–";
-  color: gray;
-  position: absolute;
-  margin-left: -1em;
 }
 
 ul {
