@@ -20,6 +20,27 @@ p {
     font-weight: 400;
 }
 
+.gallery {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid lightgray;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
 .gh-link {
     text-decoration: underline;
     font-size: 12px;
@@ -29,39 +50,4 @@ p {
 
 .gh-link:hover {
     text-decoration-color: hsl(var(--hue_1), 100%, 50%);
-}
-
-div.gallery {
-    border: 1px solid #ccc;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-div.gallery:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
 }

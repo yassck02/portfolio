@@ -10,7 +10,6 @@
           placeholder="Name"
           [(ngModel)]="name"
           required
-          minlength="3"
           #nameInput="ngModel">
 
          <textarea
@@ -21,7 +20,7 @@
            required
            #messageInput="ngModel"></textarea>
 
-        <a type="submit" href="mailto:yassck02@gmail.com?subject={{email}}&body={{message}}">Submit</a>
+        <a type="submit" href="mailto:yassck02@gmail.com?subject={{name}}&body={{message}}">Submit</a>
     </form>
 
 </div>
