@@ -7,21 +7,33 @@ import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 })
 export class ProjectService {
 
-    private _api_endpoint: string = "https://api.github.com/repos/yassck02/";
+    // ex: curl -H "Accept: application/vnd.github.v3.html" https://api.github.com/repos/yassck02/Spirographer/readme
+    private _github_base: string = "https://github.com";
+    private _api_endpoint: string = "https://api.github.com/repos";
+    private _username: string = "yassck02";
 
-    getProject(id: number):Observable<html> {
+    getProjectReadme(id: number):Observable<html> {
         let head = new HttpHeaders({
             'Accept': 'application/vnd.github.v3.html',
          })
-         // ex: curl -H "Accept: application/vnd.github.v3.html" https://api.github.com/repos/yassck02/Spirographer/readme
-        let url = this._api_endpoint + PROJECT_REFS[id] + "/readme";
-        console.log(url);
+        let url = this._api_endpoint + "/" + this._username + "/" + PROJECT_REFS[id] + "/readme";
         return this.http.get(url, { headers: head, responseType: 'text'});
+    }
+
+    getProjectName(id: number): string {
+        return PROJECT_REFS[id];
+    }
+
+    getProjectRepoLink(id: number): string {
+        return this._github_base + "/" + this._username + "/" + PROJECT_REFS[id];
     }
 
     constructor(private http: HttpClient) { }
 
-    getProjectRefs(): string[] { return PROJECT_REFS; }
+    getAllProjectNames(): string[] {
+        console.log(PROJECT_REFS);
+        return PROJECT_REFS;
+    }
 }
 
 export const PROJECT_REFS: string[] = [
