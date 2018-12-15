@@ -1,32 +1,34 @@
 
 #title {
-    width: 55%;
     border: 1px solid lightgray;
     background: white;
     border-radius: var(--radius);
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#title * {
-    height: 50%;
+h1 {
+    font-size: 50px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    color: white;
     margin: 0;
-    padding: 3px 8px 3px 8px;
 }
 
-#intro {
-    display: inline-block;
-    float: left;
-    height: 100%;
-}
-
-#intro * {
-    height: 50%;
-}
-
-#condition {
-    display: inline-block;
+.right {
     float: right;
+    position: absolute;
+}
+
+.left {
+    float: left;
+    position: absolute;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
 }
 
 .grid div {
@@ -37,17 +39,6 @@
     max-width: 275px;
     min-width: 200px;
     width: 30%;
-}
-
-h1 {
-    font-size: 50px;
-    border-top-left-radius: var(--radius);
-    border-top-right-radius: var(--radius);
-    color: white;
-}
-
-h2 {
-    font-size: 32px;
 }
 
 em {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
-import { ProjectService, IProject } from '../../services/project.service'
+import { ProjectService } from '../../services/project.service'
 
 @Component({
     templateUrl: './project-detail.page.html',
@@ -9,7 +9,7 @@ import { ProjectService, IProject } from '../../services/project.service'
 })
 export class ProjectDetailPage implements OnInit {
 
-    project: IProject;
+    readme: string;
 
     constructor(
         private route: ActivatedRoute,
@@ -20,9 +20,9 @@ export class ProjectDetailPage implements OnInit {
     ngOnInit() {
         let id = this.route.snapshot.paramMap.get('id');
         this.service.getProject(parseInt(id, 10))
-            .subscribe( (data: IProject) => {
-                this.project = data;
+            .subscribe( (data: any) => {
+                this.readme = data;
+                console.log(data);
             });
     }
-
 }

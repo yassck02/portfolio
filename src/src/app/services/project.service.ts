@@ -1,33 +1,27 @@
 import { Injectable } from '@angular/core';
 import { Observable } from "rxjs";
-import { HttpClient } from "@angular/common/http";
-
-export interface IProject {
-    title: string;
-    subtitle: string;
-    repoUrl: string;
-    images: string[];
-}
+import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProjectService {
 
-    private _profile_url: string = "https://raw.githubusercontent.com/yassck02";
-    private _manifest_filename: string = "manifest.json";
+    private _api_endpoint: string = "https://api.github.com/repos/yassck02/";
 
-    getProject(id: number):Observable<IProject> {
-        var url = this._profile_url + "/" + PROJECT_REFS[id] + "/master/" + this._manifest_filename;
-        return this.http.get<IProject>( url );
+    getProject(id: number):Observable<html> {
+        let head = new HttpHeaders({
+            'Accept': 'application/vnd.github.v3.html',
+         })
+         // ex: curl -H "Accept: application/vnd.github.v3.html" https://api.github.com/repos/yassck02/Spirographer/readme
+        let url = this._api_endpoint + PROJECT_REFS[id] + "/readme";
+        console.log(url);
+        return this.http.get(url, { headers: head, responseType: 'text'});
     }
 
     constructor(private http: HttpClient) { }
 
-    getProjectRefs(): string[] {
-        return PROJECT_REFS;
-    }
-
+    getProjectRefs(): string[] { return PROJECT_REFS; }
 }
 
 export const PROJECT_REFS: string[] = [

@@ -1,15 +1,12 @@
 
 :root {
-    --light_0: 0;
-    --light_1: 10;
-    --light_2: 20;
-    --light_3: 30;
-
-    --color: blue;
     --radius: 4px;
 
-    --hue_0: 35;
-    --hue_1: 335;
+    --hue_0: 280;
+    --hue_1: 280;
+
+    --hue_0a: 335;
+    --hue_1a: 35;
 }
 
 ::selection {
