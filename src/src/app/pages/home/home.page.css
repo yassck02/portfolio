@@ -3,7 +3,7 @@
     width: 55%;
     border: 1px solid lightgray;
     background: white;
-    border-radius: 8px;
+    border-radius: var(--radius);
     margin-left: auto;
     margin-right: auto;
 }
@@ -31,14 +31,18 @@
 
 .grid div {
     border: 1px solid lightgray;
-    border-radius: 5px;
+    border-radius: var(--radius);
     padding: 8px;
+    margin: 10px;
+    max-width: 275px;
+    min-width: 200px;
+    width: 30%;
 }
 
 h1 {
     font-size: 50px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
     color: white;
 }
 
@@ -77,34 +81,7 @@ h4 {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 20px;
-}
-
-.skills {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.languages {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.software {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
-.tools {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.framewrks {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

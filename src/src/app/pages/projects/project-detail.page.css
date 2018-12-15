@@ -26,10 +26,14 @@ p {
     justify-content: center;
 }
 
+a {
+    padding: 0;
+    padding: 5px;
+}
+
 img {
     width: 100%;
     max-width: 400px;
-    margin: 5px;
     display: inline;
     border: 1px solid lightgray;
     -webkit-filter: grayscale(100%);

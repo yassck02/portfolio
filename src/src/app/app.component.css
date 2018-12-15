@@ -1,6 +1,6 @@
 .main {
     width: 75%;
-    max-width: 1000px;
+    max-width: 975px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -14,7 +14,7 @@
 }
 
 .card {
-    border-radius: 5px;
+    border-radius: var(--radius);
     border: 1px solid lightgray;
     background-color: white;
     padding: 15px;
@@ -48,7 +48,7 @@ button {
     background: #f9f9f9;
     top: 48%;
     position: fixed;
-    border-radius: 4px;
+    border-radius: var(--radius);
     width: 20px;
     height: 35px;
     font-weight: 700;
@@ -73,7 +73,7 @@ button:active {
     float: right;
     margin: 0;
     border: solid 1px hsl(var(--hue_0), 100%, 50%);
-    border-radius: 3px;
+    border-radius: var(--radius);
     padding-left: 3px;
     padding-right: 3px;
 }
