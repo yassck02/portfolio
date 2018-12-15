@@ -12,7 +12,7 @@ export class ProjectService {
     private _api_endpoint: string = "https://api.github.com/repos";
     private _username: string = "yassck02";
 
-    getProjectReadme(id: number):Observable<html> {
+    getProjectReadme(id: number):Observable<any> {
         let head = new HttpHeaders({
             'Accept': 'application/vnd.github.v3.html',
          })
