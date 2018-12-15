@@ -21,16 +21,16 @@ p {
 }
 
 .gallery {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 img {
     width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    max-width: 400px;
+    margin: 5px;
+    display: inline;
     border: 1px solid lightgray;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);

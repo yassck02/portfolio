@@ -9,12 +9,9 @@
     <p *ngIf="project.description !== undefined">{{project.description}}</p>
 
     <div class="gallery">
-        <div *ngFor="let image of project.images">
-          <div class="gallery">
-            <a href="https://raw.githubusercontent.com/yassck02/{{project.title}}/master/{{image}}">
-              <img src="https://raw.githubusercontent.com/yassck02/{{project.title}}/master/{{image}}">
-            </a>
-          </div>
-        </div>
+        <a href="https://raw.githubusercontent.com/yassck02/{{project.title}}/master/{{image}}"
+        *ngFor="let image of project.images">
+          <img src="https://raw.githubusercontent.com/yassck02/{{project.title}}/master/{{image}}">
+        </a>
     </div>
 </div>
