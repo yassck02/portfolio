@@ -26,14 +26,14 @@ import { ProjectService } from '../../services/project.service'
         }
         #btn-back {
             display: inline-block;
+            color: gray;
             text-decoration: none;
-            color: hsl(var(--hue_0), 100%, 50%);
             border: solid 1px white;
             border-radius: var(--radius);
             padding: 2px;
         }
         #btn-back:hover {
-            border: solid 1px hsl(var(--hue_0), 100%, 50%);
+            border-color: hsl(var(--hue_0), 100%, 50%);
         }
     `]
 })
