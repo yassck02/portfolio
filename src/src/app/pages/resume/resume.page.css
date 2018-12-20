@@ -134,13 +134,3 @@ ul {
     grid-column-end: 3;
     padding-right: 20px;
 }
-
-.references {
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-.reference {
-    display: inline-block;
-    width: 33.3%;
-}
