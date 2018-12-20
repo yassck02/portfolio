@@ -47,7 +47,17 @@ export const EXPERIENCE: IExperience[] = [
         timeframe: 'May \'18 - Dec \'18',
         skills: [
             'Mobile app developement',
-            'IMplamented art assets'
+            'Implamented art assets'
+        ]
+    },
+    {
+        title: 'Lab Technician',
+        company: 'UWW Arts Media Center',
+        location: 'Whitewater WI',
+        timeframe: 'Sept \'16 - May \'18',
+        skills: [
+            'Operated and maintained a 3D printer and Laser cutter',
+            'Taught students and professors how to use them'
         ]
     }
 ]
