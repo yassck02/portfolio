@@ -21,7 +21,6 @@
     margin-bottom: 10px;
 }
 
-
 .media-links {
     float: right;
 }
@@ -64,17 +63,13 @@ button:active {
     background: hsl(var(--hue_1), 100%, 50%);
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 .note {
     text-align: center;
     font-size: 10px;
     color: gray;
-}
-
-.resume-link {
-    float: right;
-    margin: 0;
-    border: solid 1px hsl(var(--hue_0), 100%, 50%);
-    border-radius: var(--radius);
-    padding-left: 3px;
-    padding-right: 3px;
 }
