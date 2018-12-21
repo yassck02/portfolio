@@ -69,6 +69,6 @@ export class ProjectDetailPage implements OnInit {
     }
 
     setReadme(string: string) {
-        this.readme = string.replace(new RegExp("%BASE%", 'g'), this.raw_base_link);
+        this.readme = string.replace(new RegExp("/images", 'g'), this.raw_base_link + "/images");
     }
 }
