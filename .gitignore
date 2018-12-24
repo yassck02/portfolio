@@ -8,6 +8,9 @@ project/dist
 project/tmp
 project/out-tsc
 
+# documents
+project/docs
+
 # dependencies
 project/node_modules
 
