@@ -5,7 +5,7 @@
 
 hr {
     border: 0;
-    background-color: hsl(var(--hue_0), 100%, 50%);
+    background-color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     width: 100%;
     height: 1px;
 }
@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-    color: hsl(var(--hue_1), 100%, 50%);
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
 }
 
 h1 {
@@ -64,7 +64,7 @@ li {
 }
 
 #portfolio-link {
-    color: hsl(var(--hue_1), 100%, 50%);
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
 }
 
 .date {
@@ -89,7 +89,7 @@ ul {
     margin: 4px 0 4px 0;
     width: 100%;
     height: 0px;
-    border-top: 1px solid hsl(var(--hue_0), 100%, 50%);
+    border-top: 1px solid hsl(var(--hue_0), var(--sat_0), var(--brt_0));
 }
 
 .objective {

@@ -5,18 +5,19 @@ import { ProjectService } from '../../services/project.service'
 @Component({
     template: `
     <a *ngFor="let project of projectNames; index as i"
-        routerLink="/projects/{{i}}">{{projectNames[i]}},
+        routerLink="/projects/{{i}}">{{projectNames[i]}}
     </a>
     `,
     styles: [
         `a {
             color: #555;
             text-decoration: none;
-            margin-left: 6px;
-            padding-left: 2px;
+            margin: 15px;
+            padding: 2px;
             border-left: 2px solid white;
+            display: inline-block;
         }
-        a:hover { border-left: 2px solid hsl(var(--hue_1), 100%, 50%); }
+        a:hover { border-left: 2px solid hsl(var(--hue_0), var(--sat_0), var(--brt_0)); }
     `]
 })
 export class ProjectsPage implements OnInit {

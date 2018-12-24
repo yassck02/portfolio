@@ -14,9 +14,10 @@
                 <a *ngFor="let tab of tabs"
                     routerLink="{{tab.path}}"
                     routerLinkActive="activeLink"
-                    (click)="currentTab=tab.index">{{tab.label}}</a>
+                    (click)="currentTab=tab.index">{{tab.label}}
+                </a>
 
-                <div class="media-links">
+                <div id="media-links">
                     <a href="https://github.com/yassck02">
                         <img src="./assets/icons/github.png" width="15px" height="15px">
                     </a>

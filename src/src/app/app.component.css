@@ -21,7 +21,7 @@
     margin-bottom: 10px;
 }
 
-.media-links {
+#media-links {
     float: right;
 }
 
@@ -32,18 +32,18 @@ a {
 }
 
 a:hover {
-    color: hsl(var(--hue_1), 100%, 50%);
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     text-decoration: none;
 }
 
 .activeLink {
-    color: hsl(var(--hue_0), 100%, 50%);
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     text-decoration: underline;
 }
 
 button {
-    color: hsl(var(--hue_0), 100%, 50%);
-    border: solid 1px hsl(var(--hue_0), 100%, 50%);
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
+    border: solid 1px hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     background: #f9f9f9;
     top: 48%;
     position: fixed;
@@ -56,20 +56,27 @@ button {
 
 button:hover {
     color: #f9f9f9;
-    background: hsl(var(--hue_0), 100%, 50%);
+    background: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
 }
 
 button:active {
-    background: hsl(var(--hue_1), 100%, 50%);
-}
-
-nav {
-    display: flex;
-    align-items: center;
+    background: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
 }
 
 .note {
     text-align: center;
     font-size: 10px;
     color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+    }
+    button {
+        display: none;
+    }
+    .card {
+        border-radius: 0;
+    }
 }

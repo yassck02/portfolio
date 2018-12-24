@@ -22,7 +22,7 @@ import { ProjectService } from '../../services/project.service'
             text-decoration: underline;
         }
         #repo-link:hover { 
-            color: hsl(var(--hue_1), 100%, 50%);
+            color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
         }
         #btn-back {
             display: inline-block;
@@ -33,7 +33,7 @@ import { ProjectService } from '../../services/project.service'
             padding: 2px;
         }
         #btn-back:hover {
-            border-color: hsl(var(--hue_0), 100%, 50%);
+            border-color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
         }
         table {
             width: 100%;

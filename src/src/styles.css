@@ -2,11 +2,13 @@
 :root {
     --radius: 4px;
 
-    --hue_0: 280;
-    --hue_1: 280;
+    --hue_0: 345;
+    --sat_0: 70%;
+    --brt_0: 40%;
 
-    --hue_0a: 335;
-    --hue_1a: 35;
+    --hue_1: 345;
+    --sat_1: 70%;
+    --brt_1: 40%;
 }
 
 ::selection {
@@ -24,7 +26,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-family: Calibre, " Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
 .code {
@@ -34,9 +36,9 @@ body {
 .gradient-background {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9400+0,ff006a+100 */
     background: white; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, hsl(var(--hue_0),100%,50%) 0%, hsl(var(--hue_1),100%,50%) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, hsl(var(--hue_0),100%,50%) 0%,hsl(var(--hue_1),100%,50%) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, hsl(var(--hue_0),100%,50%) 0%,hsl(var(--hue_1),100%,50%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(-45deg,    hsl(var(--hue_0),var(--sat_0),var(--brt_0)) 0%, hsl(var(--hue_1),var(--sat_1),var(--brt_1)) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, hsl(var(--hue_0),var(--sat_0),var(--brt_0)) 0%, hsl(var(--hue_1),var(--sat_1),var(--brt_1)) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,         hsl(var(--hue_0),var(--sat_0),var(--brt_0)) 0%, hsl(var(--hue_1),var(--sat_1),var(--brt_1)) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .clip-text {

@@ -26,9 +26,9 @@ p {
 }
 
 a {
-    border: solid 1px hsl(var(--hue_1), 100%, 50%);
+    border: solid 1px hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     border-radius: var(--radius);
-    color: hsl(var(--hue_1), 100%, 50%);
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     background-color: white;
     margin: 0;
     text-decoration: none;
@@ -37,10 +37,10 @@ a {
 
 a:hover {
     color: white;
-    background-color: hsl(var(--hue_1), 100%, 50%);
+    background-color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     cursor: pointer;
 }
 
 a:active {
-    background-color: hsl(var(--hue_0), 100%, 50%);
+    background-color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
 }

@@ -6,7 +6,7 @@ ul {
 hr {
     position: relative; 
     border: none;
-    border-left: 1px solid hsl(var(--hue_1), 100%, 50%);
+    border-left: 1px solid hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     margin-top: 0;
     height: 100%;
     width: 1px;      
@@ -22,12 +22,9 @@ ul {
     margin: 0 0 25px 0;
 }
 
-.row {
-    width: 100%;
-}
-
 #title {
     margin: 0;
+    float: left;
 }
 
 #info {
@@ -39,4 +36,8 @@ ul {
     display: inline-block;
     margin: 0 5px 0 5px;
     vertical-align: middle;
+}
+
+#time {
+    float: right;
 }
