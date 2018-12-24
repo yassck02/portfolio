@@ -1,7 +1,6 @@
 # yassck02.github.io
 ===============
 A single page web app to display my projects, contact information, and resume.
-===============
 
 ![apple-touch-icon.png](apple-touch-icon.png)
 
