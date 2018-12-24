@@ -1,15 +1,15 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # gitignore folder
-src/gitignore
+project/gitignore
 
 # compiled output
-src/dist
-src/tmp
-src/out-tsc
+project/dist
+project/tmp
+project/out-tsc
 
 # dependencies
-src/node_modules
+project/node_modules
 
 # IDEs and editors
 /.idea
