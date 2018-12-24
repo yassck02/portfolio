@@ -6,4 +6,3 @@ L-System-Viewer
 ASCII-Maze-Generator
 Fractals
 yassck02.github.io
-Chalk-Talk
