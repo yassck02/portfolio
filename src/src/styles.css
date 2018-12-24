@@ -12,7 +12,7 @@
 }
 
 ::selection {
-  background: hsla(var(--hue_1), 100%, 50%, 0.15)
+  background: hsla(var(--hue_1), var(--sat_0), var(--brt_0), 0.20)
 }
 
 html {
