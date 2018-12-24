@@ -9,6 +9,7 @@ repos=( 	"/Users/Connor/Documents/Projects/software/_Chaos"
 			"/Users/Connor/Documents/Projects/software/Math-Art"
 			"/Users/Connor/Documents/Projects/software/Maze-Generator"
 			"/Users/Connor/Documents/Projects/software/Photo-2-Text"
+			"/Users/Connor/Documents/Projects/software/yassck02.github.io"
 			"/Users/Connor/Documents/Projects/software/Spirographer"	)
 
 clear
