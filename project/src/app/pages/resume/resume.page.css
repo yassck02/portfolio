@@ -1,6 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 7px;
 }
 
 hr {
@@ -93,11 +94,11 @@ ul {
 }
 
 .objective {
-    grid-column-start: 1;
-    grid-column-end: 5;
+    width: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .education {
@@ -133,4 +134,14 @@ ul {
     grid-column-start: 1;
     grid-column-end: 3;
     padding-right: 20px;
+}
+
+.references {
+	grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.reference-item {
+	width: 25%;
+	display: inline-block
 }
