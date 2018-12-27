@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ExperienceService, IExperience } from '../../services/experience.service';
+import { ExperienceService, IExperienceItem } from '../../services/experience.service';
 
 @Component({
   templateUrl: './experience.page.html',
@@ -8,11 +8,13 @@ import { ExperienceService, IExperience } from '../../services/experience.servic
 })
 export class ExperiencePage {
 
-    public experiences: IExperience[];
+    public experiences: IExperienceItem[];
 
     constructor(private service: ExperienceService) { }
 
     ngOnInit() {
-        this.experiences = this.service.getExperiences();
+        this.service.getExperiences().subscribe((data) => {
+            this.experiences = data
+        })
     }
 }
