@@ -1,0 +1,25 @@
+#repo-link { 
+    float: right;
+    color: gray;
+    text-decoration: underline;
+}
+#repo-link:hover { 
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
+}
+#btn-back {
+    display: inline-block;
+    color: gray;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: var(--radius);
+    padding: 2px;
+}
+#btn-back:hover {
+    border-color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
+}
+table {
+    width: 100%;
+}
+img {
+    max-width: 200px;
+}

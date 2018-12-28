@@ -1,0 +1,8 @@
+<a id="btn-back" routerLink="/projects">< Back</a>
+<a id="repo-link" href="{{repoLink}}">Repository</a>
+<div *ngIf="readme === undefined">
+    <p>Loading...</p>
+</div>
+<div *ngIf="readme !== undefined">
+    <div [innerHTML]="readme"></div>
+</div>

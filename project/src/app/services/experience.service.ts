@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
-import { ElementSchemaRegistry } from '@angular/compiler';
 
 export interface IExperienceItem {
     title: string;
@@ -16,9 +15,11 @@ export interface IExperienceItem {
 })
 export class ExperienceService {
 
+    private _experience_location = '../../assets/experiences.json'
+
     constructor(private http: HttpClient) { }
 
     getExperiences(): Observable<IExperienceItem[]> {
-        return this.http.get<IExperienceItem[]>('../../assets/experiences.json')
+        return this.http.get<IExperienceItem[]>(this._experience_location)
     }
 }
