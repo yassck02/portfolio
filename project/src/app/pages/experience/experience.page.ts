@@ -25,12 +25,12 @@ export class ExperiencePage implements OnInit {
     }
 
     private start: Pair = { x: 20, y: 20 };
-    private scale: Pair = { x: 10, y: 10 };
-    private size:  Pair = { x: 10, y: 45 };
+    private scale: Pair = { x: 15, y: 15 };
+    private size:  Pair = { x: 10, y: 60 };
     private tickWidth = 0.25;
 
     renderTimeline() {
-        this.svgService.initDocument({ x: 250, y: 1000 });
+        this.svgService.initDocument({ x: 250, y: 1050 });
         this.drawTimeLine();
         this.drawExperiences();
         this.innerHTML = this.sanitizer.bypassSecurityTrustHtml(this.svgService.getDocument());
@@ -47,24 +47,29 @@ export class ExperiencePage implements OnInit {
 
         for(let i = 0; i <= this.size.y; i++) {
             var tickWidth = this.tickWidth;
-            if (i % 5 == 0) { tickWidth *= 2; }
+            if (i % 12 == 0) {
+                tickWidth *= 2;
+            }
             this.svgService.line(
                 this.map({ x: -tickWidth, y: i }),
                 this.map({ x: +tickWidth, y: i }),
             )
         }
+        this.svgService.clearStyles();
     }
 
     drawExperiences() {
         this.svgService.setStroke("rgb(200,0,0)");
         this.svgService.setStroke_Width(5);
+        this.svgService.setStroke_Linecap("round");
 
         for(let experience of this.experiences) {
             this.svgService.line(
-                this.map({ x: 1, y: experience.date                       }),
-                this.map({ x: 1, y: experience.date + experience.duration }),
+                this.map({ x: 1.5, y: experience.date                       }),
+                this.map({ x: 1.5, y: experience.date + experience.duration }),
             )
         }
+        this.svgService.clearStyles();
     }
 
     // Maps the given point on the timeline to a point on the canvas

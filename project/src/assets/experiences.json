@@ -3,12 +3,18 @@
         "title": "Software Engineering Intern, Rockwell Automation",
         "description": "Developed and documented user facing features in Python, C#, and C++\nParticipated in the full development lifecycle using Scaled Agile methodologies\nDesigned and implamented automated test workflows to test pre production code",
         "date": 3,
-        "duration": 4
+        "duration": 2
     },
     {
         "title": "Programming Intern, Interactive Degree Planner LLC",
         "description": "Designed, implemented, and tested complex algorithms in C++\nWorked with object orient design principles including multiple inheritance, encapsulation, and polymorphism\nOptimized and updated old code to comply with new specifications\nParticipated in weekly team meetings to present progress",
-        "date": 5,
-        "duration": 3
+        "date": 10,
+        "duration": 2
+    },
+    {
+        "title": "Programming Intern, Interactive Degree Planner LLC",
+        "description": "Designed, implemented, and tested complex algorithms in C++\nWorked with object orient design principles including multiple inheritance, encapsulation, and polymorphism\nOptimized and updated old code to comply with new specifications\nParticipated in weekly team meetings to present progress",
+        "date": 15,
+        "duration": 0
     }
 ]
