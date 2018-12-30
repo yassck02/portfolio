@@ -12,10 +12,10 @@ export class SVGService {
 
     constructor() { }
 
-    private document: string;
+    private image: string = "";
 
     initDocument(size: Pair) {
-        document.append(`<svg height=\"${size.x}\" width=\"${size.y}\">`)
+        this.image = this.image.concat(`<svg width=\"${size.x}\" height=\"${size.y}\">`)
     }
 
     private fill: string;
@@ -32,28 +32,29 @@ export class SVGService {
 
     getStyle(): string {
         var style: string = "";
-        if(this.fill           != undefined) { style.concat(`fill:${this.fill};`)                     }
-        if(this.stroke         != undefined) { style.concat(`stroke:${this.stroke};`)                 }
-        if(this.stroke_width   != undefined) { style.concat(`stroke:${this.stroke_width};`)           }
-        if(this.fill_opacity   != undefined) { style.concat(`fill_opacity:${this.fill_opacity};`)     }
-        if(this.stroke_opacity != undefined) { style.concat(`stroke_opacity:${this.stroke_opacity};`) }
+        if(this.fill           != undefined) { style = style.concat(` fill=\"${this.fill}\"`)                     }
+        if(this.stroke         != undefined) { style = style.concat(` stroke=\"${this.stroke}\"`)                 }
+        if(this.stroke_width   != undefined) { style = style.concat(` stroke=\"${this.stroke_width}\"`)           }
+        if(this.fill_opacity   != undefined) { style = style.concat(` fill_opacity=\"${this.fill_opacity}\"`)     }
+        if(this.stroke_opacity != undefined) { style = style.concat(` stroke_opacity=\"${this.stroke_opacity}\"`) }
         return style;
     }
 
     rect(pos: Pair, size: Pair) {
-        document.append(`<rect x=\"${pos.x}\" y=\"${pos.y}\" width=\"${size.x}\" height=\"${size.y}\" style=\"${this.getStyle()}\">`);
+        this.image = this.image.concat(`<rect x=\"${pos.x}\" y=\"${pos.y}\" width=\"${size.x}\" height=\"${size.y}\"${this.getStyle()}/>`);
     }
 
     circle(pos: Pair, r: number) {
-        document.append(`<circle cx=\"${pos.x}\" cy=\"${pos.y}\" r=\"${r}\" style=\"${this.getStyle()}\>`);
+        this.image = this.image.concat(`<circle cx=\"${pos.x}\" cy=\"${pos.y}\" r=\"${r}\"${this.getStyle()}/>`);
     }
 
     line(posA: Pair, posB: Pair) {
-        document.append(`<line x1=\"${posA.x}\" y1=\"${posA.y}\" x2=\"${posB.x}\" y2=\"${posB.y}\" style=\"${this.getStyle()}\/>`)
+        this.image = this.image.concat(`<line x1=\"${posA.x}\" y1=\"${posA.y}\" x2=\"${posB.x}\" y2=\"${posB.y}\"${this.getStyle()}/>`)
     }
 
     getDocument(): string {
-        document.append('</svg>');
-        return this.document;
+        this.image = this.image.concat('</svg>');
+        console.log(this.image);
+        return this.image;
     }
 }

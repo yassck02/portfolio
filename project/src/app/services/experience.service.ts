@@ -4,10 +4,9 @@ import { HttpClient } from "@angular/common/http";
 
 export interface IExperienceItem {
     title: string;
-    company: string;
-    location: string;
-    timeframe: string;
-    skills: string[];
+    description: string;
+    date: number;       
+    duration: number;
 }
 
 @Injectable({
