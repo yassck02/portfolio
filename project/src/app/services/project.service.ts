@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable. of } from "rxjs";
+import { Observable, of } from "rxjs";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { map, tap } from "rxjs/operators";
 
@@ -41,7 +41,7 @@ export class ProjectService {
             })
         );
     }
-    
+
     getRepoLink(id: number): string {
         return this.github_base + "/" + this.username + "/" + this.projects[id];
     }
