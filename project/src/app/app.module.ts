@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 
 import { ProjectService } from './services/project.service'
 import { ExperienceService } from './services/experience.service'
+import { SVGService } from './services/svg.service'
+
 
 import { HomePage } from './pages/home/home.page';
 import { ProjectsPage } from './pages/projects/projects.page';
@@ -37,7 +39,7 @@ import { ResumePage } from './pages/resume/resume.page';
         HttpClientModule,
         FormsModule
     ],
-    providers: [ ProjectService ],
+    providers: [ ProjectService, ExperienceService, SVGService ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule { }
