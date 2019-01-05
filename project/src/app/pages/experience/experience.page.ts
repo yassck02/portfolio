@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ExperienceService, IExperienceItem } from '../../services/experience.service';
 import { Pair, SVGService } from '../../services/svg.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
@@ -7,11 +7,11 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   templateUrl: './experience.page.html',
   styleUrls: ['./experience.page.css'],
 })
-export class ExperiencePage implements OnInit {
+export class ExperiencePage implements OnInit, AfterViewInit {
 
     public experiences: IExperienceItem[];
 
-    private innerHTML: SafeHtml = "";
+    innerHTML: SafeHtml = "";
 
     constructor(private experienceService: ExperienceService, 
                 private svgService: SVGService,
@@ -22,6 +22,10 @@ export class ExperiencePage implements OnInit {
             this.experiences = data
             this.renderTimeline();
         })
+    }
+
+    ngAfterViewInit() {
+        this.addExperienceMouseListeners();
     }
 
     private start: Pair = { x: 20, y: 20 };
@@ -63,13 +67,35 @@ export class ExperiencePage implements OnInit {
         this.svgService.setStroke_Width(5);
         this.svgService.setStroke_Linecap("round");
 
-        for(let experience of this.experiences) {
+        this.svgService.setClass("experience-item")
+        for(var i = 0; i < this.experiences.length; i++) {
+            this.svgService.setID(`${i}`)
             this.svgService.line(
-                this.map({ x: 1.5, y: experience.date                       }),
-                this.map({ x: 1.5, y: experience.date + experience.duration }),
+                this.map({ x: 1.5, y: this.experiences[i].date                       }),
+                this.map({ x: 1.5, y: this.experiences[i].date + this.experiences[i].duration }),
             )
         }
         this.svgService.clearStyles();
+    }
+
+    addExperienceMouseListeners() {
+        var elements = Array.from(document.getElementsByClassName('experience-item'));
+        console.log(elements);
+        console.log(elements.length);
+
+        elements.forEach(element => {
+            element.addEventListener('mouseover', this.onMouseEnter);
+            element.addEventListener('mouseout', this.onMouseLeave);
+            console.log(element.id);
+        });
+    }
+
+    onMouseEnter() {
+        console.log("mouse entered experience event");
+    }
+
+    onMouseLeave() {
+        console.log("mouse left experience event");
     }
 
     // Maps the given point on the timeline to a point on the canvas
