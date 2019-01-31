@@ -39,7 +39,7 @@ h2 {
 }
 
 em {
-    color: hsla(var(--hue_1), 100%, 50%);
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
     font-weight: 700;
 }
 

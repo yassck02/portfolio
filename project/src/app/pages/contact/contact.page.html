@@ -2,25 +2,23 @@
 <div class="main">
     <p>Feel free to drop me a line regarding one of my projects, past experiences, future employment or anything else!</p>
 
-    <form method="GET" action="mailto:yassck02@gmail.com">
-        <input
-          type="text"
-          name="name"
-          class="input"
-          placeholder="Name"
-          [(ngModel)]="name"
-          required
-          #nameInput="ngModel">
+    <input
+        type="text"
+        name="name"
+        class="input"
+        placeholder="Name"
+        [(ngModel)]="name"
+        required
+        #nameInput="ngModel">
 
-         <textarea
-           class="input"
-           name="message"
-           placeholder="Message"
-           [(ngModel)]="message"
-           required
-           #messageInput="ngModel"></textarea>
+    <textarea
+        class="input"
+        name="message"
+        placeholder="Message"
+        [(ngModel)]="message"
+        required
+        #messageInput="ngModel"></textarea>
 
-        <a type="submit" href="mailto:yassck02@gmail.com?subject={{name}}&body={{message}}">Submit</a>
-    </form>
+    <a type="submit" href="mailto:yassck02@gmail.com?subject={{name}}&body={{message}}">Submit</a>
 
 </div>
