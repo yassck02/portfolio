@@ -4,7 +4,7 @@ a {
     margin: 15px;
     padding: 2px;
     border-left: 2px solid white;
-    display: inline-block;
+    display: block;
 }
 a:hover {
     border-left: 2px solid hsl(var(--hue_0), var(--sat_0), var(--brt_0));

@@ -1,3 +1,10 @@
-<a *ngFor="let project of projectNames; index as i"
+<div class="list">
+    <a *ngFor="let project of projectNames; index as i" (mouseover)="on ProjectMouseOver"
     routerLink="/projects/{{i}}">{{projectNames[i]}}
-</a>
+    </a>
+</div>
+<div class="preview">
+    <div class="description">
+
+    </div>
+</div>
