@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 2px;
+    column-gap: 25px
 }
 
 hr {
@@ -13,7 +14,7 @@ hr {
 
 a {
     text-decoration: none;
-    color: black;
+    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
 }
 
 .info * {
@@ -65,10 +66,6 @@ li {
     padding-right: 10px;
 }
 
-#portfolio-link {
-    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
-}
-
 .date {
     color: #AAA;
     float: right;
@@ -109,10 +106,14 @@ ul {
 
 .course-work {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 3;
 }
 
-.course-list {
+.img {
+    display: block;
+}
+
+.project-list {
     width: 50%;
     display: inline-block;
 }
@@ -126,6 +127,11 @@ ul {
     margin-bottom: 10px;
 }
 
+.project-item {
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
 .awards {
     grid-column-start: 3;
     grid-column-end: 5;
@@ -133,18 +139,12 @@ ul {
 
 .projects {
     grid-column-start: 1;
-    grid-column-end: 3;
-    padding-right: 20px;
-}
-
-.references {
-	grid-column-start: 1;
     grid-column-end: 5;
 }
 
-.reference-item {
-	width: 25%;
-	display: inline-block
+.keywords * {
+    font-size: 1px;
+    color: white;
 }
 
 .technologies {
@@ -161,3 +161,16 @@ ul {
     width: 75%;
     display: inline-block;
 }
+
+.visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
