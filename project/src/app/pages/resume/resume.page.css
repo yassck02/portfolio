@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 2px;
-    column-gap: 25px
 }
 
 hr {
@@ -70,7 +69,7 @@ li {
     color: #AAA;
     float: right;
     clear: right;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 .location {
@@ -107,6 +106,7 @@ ul {
 .course-work {
     grid-column-start: 1;
     grid-column-end: 3;
+    margin-right: 20px;
 }
 
 .img {
