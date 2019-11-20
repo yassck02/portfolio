@@ -4,29 +4,28 @@
     grid-row-gap: 2px;
 }
 
-hr {
-    border: 0;
-    background-color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
-    width: 100%;
-    height: 1px;
-}
-
 a {
     text-decoration: none;
-    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
+    color: white;
 }
 
 .info * {
     display: inline-block;
 }
 
-a:hover {
-    color: hsl(var(--hue_0), var(--sat_0), var(--brt_0));
+.gradient-text {
+    color: transparent;
+    background-clip: text;
+}
+
+.gradient-background {
+    background-image: linear-gradient(45deg, rgb(38, 0, 255), rgb(255, 0, 85));
+    background-attachment: fixed;
 }
 
 h1 {
     font-variant: small-caps;
-    margin: 8px;
+    margin: 0px;
 }
 
 h3 {
@@ -86,8 +85,8 @@ ul {
 .hr {
     margin: 4px 0 4px 0;
     width: 100%;
-    height: 0px;
-    border-top: 1px solid hsl(var(--hue_0), var(--sat_0), var(--brt_0));
+    height: 2px;
+    /* border-top: 1px solid hsl(var(--hue_0), var(--sat_0), var(--brt_0)); */
 }
 
 .objective {
